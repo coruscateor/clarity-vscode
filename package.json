@@ -1,0 +1,25 @@
+{
+    "name": "clarity-vscode",
+    "displayName": "clarity-vscode",
+    "description": "A VSCode plugin for the Clarity Language ",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "clar",
+            "aliases": ["Clarity", "clar"],
+            "extensions": [".clar"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "clar",
+            "scopeName": "source.clar",
+            "path": "./syntaxes/clar.tmLanguage.json"
+        }]
+    }
+}
