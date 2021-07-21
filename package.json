@@ -9,17 +9,35 @@
     "categories": [
         "Programming Languages"
     ],
+    "activationEvents": [
+        "onLanguage:clarity"
+    ],
+    "main": "./out/extension.js",
     "contributes": {
-        "languages": [{
-            "id": "clar",
-            "aliases": ["Clarity", "clar"],
-            "extensions": [".clar"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "clar",
-            "scopeName": "source.clar",
-            "path": "./syntaxes/clar.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "clar",
+                "aliases": [
+                    "Clarity",
+                    "clar"
+                ],
+                "extensions": [
+                    ".clar"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "clar",
+                "scopeName": "source.clar",
+                "path": "./syntaxes/clar.tmLanguage.json"
+            }
+        ]
+    },
+    "dependencies": {
+        "@types/vscode": "^1.57.0",
+        "vscode-test": "^1.5.2",
+        "watch": "^1.0.2"
     }
 }
